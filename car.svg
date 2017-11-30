@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g>
+	<g>
+		<polygon points="31.973,21.28 9.81,21.28 9.81,19.729 29.683,19.729 24.299,6.267 18.282,6.267 14.498,13.362 13.129,12.632 
+			17.353,4.716 25.348,4.716 		"/>
+	</g>
+	<g>
+		<polygon points="9.81,21.28 0.027,21.28 0.027,14.178 3.484,10.72 11.812,10.72 11.812,12.271 4.126,12.271 1.578,14.82 
+			1.578,19.729 9.81,19.729 		"/>
+	</g>
+	<g>
+		<rect x="19.818" y="11.721" width="8.008" height="1.551"/>
+	</g>
+	<g>
+		<path d="M4.805,27.284c-2.083,0-3.778-1.694-3.778-3.778h1.551c0,1.229,0.999,2.228,2.227,2.228c1.229,0,2.228-0.999,2.228-2.228
+			h1.551C8.583,25.59,6.889,27.284,4.805,27.284z"/>
+	</g>
+	<g>
+		<path d="M23.821,27.284c-2.083,0-3.777-1.694-3.777-3.778h1.551c0,1.229,0.998,2.228,2.227,2.228s2.228-0.999,2.228-2.228H27.6
+			C27.6,25.59,25.905,27.284,23.821,27.284z"/>
+	</g>
+</g>
+<!--
+###########################################################################
+##  This is the last challenge!
+###########################################################################
+
+To complete it you need the credentials given in the previous challenge.
+
+GarageScore API
+===============
+
+GarageScore has a public API, you can request to get garages data.
+
+You will use this API to get a list of comments and display them on a webpage
+
+The route is GET api.garagescore.com/garage/reviews/05/09/2017?appId=xx&signature=yy
+
+
+Signing your requests
+=====================
+
+For the API to work, you need to sign every request adding a signature parameter in your url
+This signature is computed using the following code
+> crypto.createHmac('sha1', appSecret).update(signatureString).digest('hex')
+
+signatureString is a concatenation of various variables
+> signatureString = appId + method + encodeURI(url) + parametersString + timestamp
+
+@method: http method in UPPERCASE
+
+@url : url without the query string (but including the protocol)
+
+@parametersString: take the query string in your url, sort the parameters and remove signature and appId,
+example if your url is "?b=1&appId=2&a=3" then parametersString is "a=3&b=1"
+
+timestamp: timestamp in seconds
+
+
+Guidelines
+==========
+
+* to deliver the results, you can use a web framework like express or koa
+* the rendering must be done with one of the following technology : React, Preact, Vue or ViperHTML.
+* the design/css should not be your focus, but something good looking is always nice
+-->
+</svg>
